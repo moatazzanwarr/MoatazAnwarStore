@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style File -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Google Fonts Library -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Check</title>
+</head>
+<body>
+
+    <!-- Start The Nav -->
+    <nav class="parent">
+        <div class="top">
+          <form action="" method="get">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search" />
+          </form>
+  
+          <div class="middle">
+            <a href="#"><h2>Moataz Anwar</h2></a>
+          </div>
+  
+          <div class="right">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href=""><i class="fa-regular fa-heart"></i></a>
+            <a href=""><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+  
+        <div class="nav-line">
+          <div class="bottom">
+            <a href="../index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="shop.html">SHOP</a>
+            <a href="">CATALOGUE</a>
+            <a href="">NEW ARRIVALS</a>
+            <a href="">CONTACT</a>
+          </div>
+        </div>
+      </nav>
+      <!-- End The Nav -->
+  
+      <section class="bar">
+        <div class="content">
+          <p><a href="../index.html">Home</a> <span>/</span><a href="cart.html"> Cart </a><span>/</span> Checkout </p>
+        </div>
+      </section>
+
+      <!-- Start The Checkout -->
+
+      <section class="check-sec">
+        <div class="check-container">
+          <div class="check-top">
+            <p>Returning customer? <a href="#">Click here</a> to login</p>
+          </div>
+
+          <div class="check-bottom">
+
+            <div class="check-left">
+
+              <h2>Billing Details</h2>
+
+              <div class="left-form">
+                <div class="cel-country">
+                  <label for="country">Country <span>*</span></label>
+                  <select id="country" class="">
+                    <option value="1">Select a country</option>    
+                    <option value="2">bangladesh</option>    
+                    <option value="3">Algeria</option>    
+                    <option value="4">Afghanistan</option>    
+                    <option value="5">Ghana</option>    
+                    <option value="6">Albania</option>    
+                    <option value="7">Bahrain</option>    
+                    <option value="8">Colombia</option>    
+                    <option value="9">Dominican Republic</option>    
+                  </select>
+                </div>
+
+                <div class="check-name">
+                  <div class="first">
+                    <label for="first">First Name <span>*</span></label>
+                    <input type="text" id="first">
+                  </div>
+
+                  <div class="second">
+                    <label for="second">Last Name <span>*</span></label>
+                    <input type="text" id="second">
+                  </div>
+
+                </div>
+
+                <div class="company-name">
+                  <label for="company">Company Name</label>
+                  <input type="text" id="company">
+                </div>
+
+                <div class="company-address">
+                  <label for="address">Address <span>*</span></label>
+                  <input type="text" id="address" placeholder="Street address">
+                  <input type="text" placeholder="Apartment, suite, unit etc. (optional)">
+
+                </div>
+
+                <div class="check-state">
+                  <div class="first">
+                    <label for="State">State / Country <span>*</span></label>
+                    <input type="text" id="State">
+                  </div>
+
+                  <div class="second">
+                    <label for="Posta">Posta / Zip  <span>*</span></label>
+                    <input type="text" id="Posta">
+                  </div>
+                </div>
+
+                <div class="check-phone">
+                  <div class="first">
+                    <label for="Email">Email Address <span>*</span></label>
+                    <input type="text" name="email" id="Email">
+                  </div>
+
+                  <div class="second">
+                    <label for="Phone">Phone  <span>*</span></label>
+                    <input type="text" name="phone" id="Phone" placeholder="Phone Number">
+                  </div>
+                </div>
+
+                <div class="check-check-box">
+
+                  <div class="check">
+                    <input type="checkbox" name="check-1" id="check-1">
+                    <label for="check-1">Create an account?</label>
+                  </div>
+                  <div class="check">
+                    <input type="checkbox" name="check-2" id="check-2">
+                    <label for="check-2">Ship To A Different Address?</label>
+                  </div>
+
+                </div>
+
+                <div class="check-textarea">
+                  <label for="check-textarea">Order Notes</label>
+                  <textarea name="textarea" id="check-textarea" placeholder="Write your notes here..."></textarea>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="check-right">
+              <h2 class="h2-1">Coupon Code</h2>
+
+              <div class="check-right-top">
+                <label for="Coupon">Enter your coupon code if you have one</label>
+                <div>
+                  <input type="text" id="Coupon" placeholder="Coupon Code">
+                   <button type="submit">APPLY</button>
+                  </div>
+              </div>
+
+              <h2 class="h2-2">Your Order</h2>
+
+              <div class="check-right-bottom">
+
+                  <div class="text">
+                    <h4 class="w-1">Product</h4> <h4>Total</h4>
+                  </div>
+  
+                  <div class="border-top text">
+                    <p class="w-1">Top Up T-Shirt x 1</p> <p>$250.00</p>
+                  </div>
+  
+                  <div class="border-top text">
+                    <p class="w-1">Polo Shirt x 1</p> <p>$100.00</p>
+                  </div>
+  
+                  <div class="border-top text">
+                    <h4 class="w-1">Cart Subtotal</h4> <p>$350.00</p>
+                  </div>
+  
+                  <div class="border-top text">
+                    <h4 class="w-1">Order Total</h4> <h4>$350.00</h4>
+                  </div>
+
+
+                  <div class="pay pay-top"><a href="#">Direct Bank Transfer</a></div>
+                  <div class="pay"><a href="#">Cheque Payment</a></div>
+                  <div class="pay"><a href="#">Paypal</a></div>
+
+                  <div class="place-btn">
+                    <a href="thankyou.html">PLACE ORDER</a>
+                  </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- End The Checkout -->
+
+       <!-- Start The Footer -->
+
+    <footer class="index-line">
+      <div class="parent-2">
+        <div class="foot-left">
+          <h4>Navigations</h4>
+          <div class="minus">
+            <ul>
+              <li><a href="">Sell online</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Shopping cart</a></li>
+              <li><a href="">Store builder</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="">Mobile commerce</a></li>
+              <li><a href="">Dropshipping</a></li>
+              <li><a href="">Website development</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="">Point of sale</a></li>
+              <li><a href="">Hardware</a></li>
+              <li><a href="">Software</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-right">
+          <div class="promo">
+            <h4>Promo</h4>
+            <a href="#">
+              <img src="../images/hero_1.jpg" alt="hero" />
+              <h6>Finding Your Perfect Shoes</h6>
+              <p>Promo from nuary 15 — 25, 2019</p>
+            </a>
+          </div>
+
+          <div class="info">
+            <h4>Contact Info</h4>
+            <div>
+              <div>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i>203 Fake St. Mountain
+                  View, San
+                  <span>Francisco, California, USA</span>
+                </p>
+              </div>
+
+              <div>
+                <p>
+                  <i class="fa-solid fa-phone"></i
+                  ><a href="#">+20 1002303648</a>
+                </p>
+              </div>
+
+              <div>
+                <p>
+                  <i class="fa-solid fa-envelope"></i>moatazzanwarr@gmail.com
+                </p>
+              </div>
+            </div>
+
+            <form action="" method="get">
+              <h6>Subscribe</h6>
+              <input type="email" name="email" id="" placeholder="Email" />
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <p class="about">
+        Copyright ©2023 All rights reserved | This template is made with
+        <i class="fa-sharp fa-solid fa-heart"></i> by
+        <span><a href="#">Moataz Anwar</a></span>
+      </p>
+    </footer>
+
+    <!-- End The Footer -->
+    
+</body>
+</html>
