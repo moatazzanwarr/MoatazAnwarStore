@@ -663,6 +663,7 @@ footer h4{
     color: #25262a;
 }
 
+
 footer .minus{
     display: flex;
     justify-content: space-between;
@@ -671,7 +672,7 @@ footer .minus{
 
 @media (max-width: 767px){
     footer .minus{
-        width: auto;
+        width: 350px;
         margin: 0 auto;
         flex-direction: column;
     }
@@ -878,10 +879,23 @@ footer .about span a:hover{
     display: flex;
 }
 
+@media (max-width: 767px){
+    .how{
+        flex-direction: column;
+    }
+}
+
 .how .img{
     width: 50%;
     border-radius: 5px;
     position: relative;
+}
+
+@media (max-width: 767px){
+    .how .img{
+        width: 350px;
+        margin: 0 auto;
+    }
 }
 
 .how .img img{
@@ -901,9 +915,19 @@ footer .about span a:hover{
     z-index: 1;
 }
 
+
+
 .how .about-text{
     width: 50%;
     margin-left: 120px;
+}
+
+@media (max-width: 767px){
+    .how .about-text{
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
 }
 
 .how .about-text .top-line{
@@ -911,6 +935,12 @@ footer .about span a:hover{
     height: 2px;
     width: 40px;
     background-color: #7971ea;
+}
+
+@media (max-width: 767px){
+    .how .about-text .top-line{
+        margin: 0 auto 10px auto;
+    }
 }
 
 .how .about-text h4{
@@ -961,9 +991,22 @@ footer .about span a:hover{
     justify-content: space-between;
 }
 
+@media (max-width: 767px){
+    .team .team-container{
+        width: 350px;
+        flex-direction: column;
+    }
+}
+
 .team .person{
     width: 245px;
     text-align: center;
+}
+
+@media (max-width: 767px){
+    .team .person{
+        margin: 20px auto;
+    }
 }
 
 .team .person img{
