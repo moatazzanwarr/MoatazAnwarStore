@@ -64,6 +64,12 @@ nav .top form input{
     transition: 0.3s ease;
 }
 
+@media (max-width: 767px){
+    nav .top form input{
+        width: 80px;
+    }
+}
+
 nav .top form input:focus{
     padding-left: 10px;
 }
@@ -176,6 +182,13 @@ nav .top .right i:hover{
     justify-content: end;
 }
 
+@media (max-width: 767px){
+    .sec-1{
+        background-image: url(null);
+        background-color: #A6F3ED;
+    }
+}
+
 .sec-1 .content{
     width: 50%;
     height: 100%;
@@ -184,8 +197,23 @@ nav .top .right i:hover{
     padding-left: 80px;
 }
 
+@media (max-width: 767px){
+    .sec-1 .content{
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
 .sec-1 .content .div{
     margin-left: 20px;
+}
+
+@media (max-width: 767px){
+    .sec-1 .content .div{
+        margin-left: 0;
+    }
 }
 
 .sec-1 .content h1{
@@ -225,10 +253,18 @@ nav .top .right i:hover{
 
 .blocks{
     width: 80%;
+    height: auto;
     margin: 40px auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+@media (max-width: 767px){
+    .blocks{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .blocks h4{
@@ -296,19 +332,32 @@ nav .top .right i:hover{
 
 .catigory{
     width: 80%;
-    height: 70vh;
+    height: auto;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+@media (max-width: 767px){
+    .catigory{
+        flex-direction: column;
+    }
+}
+
 .catigory .img{
     width: 32%;
     overflow: hidden;
-    height: 60vh;
+    height: auto;
     position: relative;
     cursor: pointer;
+}
+
+@media (max-width: 767px){
+    .catigory .img{
+        width: 350px;
+        margin-bottom: 30px;
+    }
 }
 
 .catigory .img:hover.img img{
@@ -329,6 +378,7 @@ nav .top .right i:hover{
     font-weight: 500;
     color: #fff;
     z-index: 1;
+    margin: 0;
 }
 
 .catigory .img h4 small{
@@ -352,14 +402,20 @@ nav .top .right i:hover{
 
 .products{
     overflow: hidden;
-    width: 100%;
-    height: 100vh;
+    /* width: 100%; */
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F8F9FA ;
     padding-bottom: 200px;
 
+}
+
+@media (max-width: 1099px){
+    .column{
+        flex-direction: column;
+    }
 }
 
 .products h1{
@@ -374,19 +430,33 @@ nav .top .right i:hover{
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
+@media (max-width: 1099px){
+    .products .container{
+        width: 100%;
+    }
+}
+
 .products .product{
-    width: 450px;
+    width: 400px;
+    height: auto;
     overflow: hidden;
     background-color: #fff;
     text-align: center;
-    /* padding-bottom: 30px; */
-    margin: 0 10px;
+    padding-bottom: 30px;
+    margin: 20px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+
+@media (max-width: 767px){
+    .products .product{
+        width: 350px;
+        margin: 20px auto;
+    }
 }
 
 .products .product img{
@@ -448,6 +518,7 @@ nav .top .right i:hover{
     margin: 0 auto;
 }
 
+
 .sale .container h2{
     text-align: center;
     margin: 20px 0 50px 0;
@@ -462,10 +533,29 @@ nav .top .right i:hover{
     align-items: center;
 }
 
+@media (max-width: 1200px){
+    .sale .container .content{
+        flex-direction: column;
+    }
+
+    .sale .container .content .img{
+        margin-bottom: 20px;
+    }
+}
+
+
+
 .sale .container .content .img{
     width: 650px;
     overflow: hidden;
 }
+
+@media (max-width: 767px){
+    .sale .container .content .img{
+        width: 350px;
+    }
+}
+
 .sale .container .content .img img{
     width: 100%;
     border-radius: 5px;
@@ -474,6 +564,12 @@ nav .top .right i:hover{
 .sale .container .content .text{
     width: 50%;
     text-align: center;
+}
+
+@media (max-width: 767px){
+    .sale .container .content .text{
+        width: 100%;
+    }
 }
 
 .sale .container .content .text h4{
@@ -541,15 +637,22 @@ nav .top .right i:hover{
 
 .parent-2{
     width: 80%;
-    height: 55vh;
+    height: auto;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
+}
+
+@media (max-width: 1200px){
+    .parent-2{
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
 footer .foot-left{
-    height: 400px;
+    height: auto;
 }
 
 
@@ -564,6 +667,14 @@ footer .minus{
     display: flex;
     justify-content: space-between;
     width: 50%;
+}
+
+@media (max-width: 767px){
+    footer .minus{
+        width: auto;
+        margin: 0 auto;
+        flex-direction: column;
+    }
 }
 
 footer .minus ul li{
@@ -587,11 +698,24 @@ footer .foot-right{
     display: flex;
     justify-content: space-between;
     width: 50%;
-    height: 400px;
+    height: auto;
+}
+
+@media (max-width:767px){
+    footer .foot-right{
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 footer .foot-right .promo{
     margin-right: 40px;
+}
+
+@media (max-width:767px){
+    footer .foot-right .promo{
+        margin-bottom: 30px;
+    }
 }
 
 footer .foot-right .promo img{
@@ -699,6 +823,15 @@ footer .about{
     margin-bottom: 100px;
     color: #8C92A0;
     font-size: 15px;
+    line-height: 1.4;
+}
+
+@media (max-width: 767px){
+    footer .about{
+
+        width: 80%;
+        margin: 40px auto;
+    }
 }
 
 footer .about span a{
